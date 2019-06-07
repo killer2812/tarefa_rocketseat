@@ -11,21 +11,23 @@
 <body>
     <script>
    
-   function experiencia(anos) {
- anos = anosEstudo
-if (anos <= 1) {
-console.log("iniciante")
-}if (anos >1 && anos <= 3){
-console.log("intermediario")
-}if (anos >3 && anos <= 6){
-console.log("Avançado")
-}if (anos >6){
-console.log("Jedi Master")
+   var usuarios = [
+  {
+    nome: 'Diego',
+    habilidades: ['Javascript', 'ReactJS', 'Redux']
+  },
+  {
+    nome: 'Gabriel',
+    habilidades: ['VueJS', 'Ruby on Rails', 'Elixir']
+  }
+];
+
+for (var i = 0; i < usuarios.length; i++)
+{
+ console.log("O " + usuarios[i].nome + " possui as habilidades: " + usuarios[i].habilidades.join(", "));
 }
 
-}
-var anosEstudo = 1;
-experiencia(anosEstudo);
+
 
 
 
